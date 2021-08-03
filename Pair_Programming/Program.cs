@@ -129,7 +129,7 @@ namespace Pair_Programming
             Console.WriteLine($"I walk through the color jungle. I take out my {adjectiveOne} canteen.There's a {adjectiveTwo} parrot with a {adjectiveThree} {nounOne} in his mouth right there in front of me in the {adjectiveFour} trees! I gaze at his {adjectiveFive} {nounTwo}. A sudden sound awakes me from my daydream! A panther’s {verbOne} in front of my head! I {verbTwo} his {adjectiveSix} breath.I remember I have a packet of {nounThree} that makes it go into a deep slumber! I {verbThree} it away from me in front of the {nounFour}. Yes he's eating it! I {verbFour} away through the {adjectiveSeven} jungle.I meet my parents at the tent.Phew! It’s been an exciting day in the jungle.");
 
             PressKeyToCountinue();
-        }     
+        }
         public void GameTwo()
         {
             Console.Clear();
@@ -163,7 +163,7 @@ namespace Pair_Programming
             Console.WriteLine($"When I go to the arcade with my {nounOne} there are lots of games to play. I spend lots of time there with my friends. In the game X - Men you can be different {nounTwo}. The point of the game is to {verbOne} every robot. You also need to save people. Then you can go to the next level. In the game Star Wars you are Luke Skywalker and you try to destroy every {nounThree}. In a car racing/ motorcycle racing game you need to beat every computerized vehicle that you are {verbTwo} against.There are a whole lot of other cool games.When you play some games you win {nounFour} for certain scores. Once you're done you can cash in your tickets to get a big {nounFive}. You can save your {nounSix} for another time. When I went to this arcade I didn't believe how much fun it would be. So far I have had a lot of fun every time I've been to this great arcade!");
 
             PressKeyToCountinue();
-        }       
+        }
         public void GameThree()
         {
             Console.Clear();
@@ -209,7 +209,7 @@ namespace Pair_Programming
             Console.WriteLine($"Today I went to the zoo. I saw a(n) {adjectiveOne} {nounOne} jumping up and down in its tree.He {verbPastTenseOne} {adverbOne} through the large tunnel that led to its {adjectiveTwo} {nounTwo}. I got some peanuts and passed them through the cage to a gigantic gray { nounThree} towering above my head. Feeding that animal mademe hungry.I went to get a {adjectiveThree} scoop of ice cream. It filled my stomach. Afterwards I had to {verbOne}{adverbTwo} to catch our bus.When I got home I {verbPastTenseTwo} my mom for a {adjective} day at the zoo.");
 
             PressKeyToCountinue();
-        }       
+        }
         public void GameFour()
         {
             Console.Clear();
@@ -326,12 +326,12 @@ namespace Pair_Programming
             Console.Clear();
         }
 
-        public string CheckIfLetter(string Letter)
+        private string CheckIfLetter(string Letter)
         {
             while (!Letter.All(Char.IsLetter))
             {
-            Console.WriteLine("Invalid selection, please enter a letter");
-            Console.ReadLine();   
+                Console.WriteLine("Invalid selection, please enter a letter");
+                Letter = Console.ReadLine();
             }
             return Letter;
         }
